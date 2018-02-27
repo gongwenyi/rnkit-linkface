@@ -1,5 +1,5 @@
 {
-  "name": "rnkit-linkface",
+  "name": "rnkit-linkface-fork",
   "description": "人脸识别/活体检测-linkface for ReactNative",
   "main": "lib/index.js",
   "author": "SimMan <liwei0990@gmail.com>",
