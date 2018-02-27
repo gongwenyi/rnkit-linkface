@@ -27,12 +27,12 @@ First, `cd` to your RN project directory, and install RNMK through [rnpm](https:
 
 * #### React Native < 0.29 (Using rnpm)
 
-  `rnpm install rnkit-linkface`
+  `rnpm install rnkit-linkface-fork`
 
 * #### React Native >= 0.29
-  `$npm install -S rnkit-linkface`
+  `$npm install -S rnkit-linkface-fork`
 
-  `$react-native link rnkit-linkface`
+  `$react-native link rnkit-linkface-fork`
 
 #### Manually
 1. Add `node_modules/rnkit-linkface/ios/RNKitLinkFace.xcodeproj` to your xcode project, usually under the `Libraries` group
@@ -43,12 +43,12 @@ First, `cd` to your RN project directory, and install RNMK through [rnpm](https:
 
 * #### React Native < 0.29 (Using rnpm)
 
-  `rnpm install rnkit-linkface`
+  `rnpm install rnkit-linkface-fork`
 
 * #### React Native >= 0.29
-  `$npm install -S rnkit-linkface`
+  `$npm install -S rnkit-linkface-fork`
 
-  `$react-native link rnkit-linkface`
+  `$react-native link rnkit-linkface-fork`
 
 #### Manually
 1. JDK 7+ is required
@@ -89,7 +89,7 @@ Have fun! :metal:
 Import library
 
 ```
-import RNKitLinkFace from 'rnkit-linkface';
+import RNKitLinkFace from 'rnkit-linkface-fork';
 ```
 
 ### Start
