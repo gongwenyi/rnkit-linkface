@@ -74,7 +74,7 @@ public class LinkFaceModule extends ReactContextBaseJavaModule implements Activi
                 promise.reject("Unknow", requestCode + "");
             }
         } catch (Exception e) {
-	    if (promise != null)
+            if (promise != null)
                 promise.reject("Exception", e.getMessage());
         }
     }
@@ -127,7 +127,7 @@ public class LinkFaceModule extends ReactContextBaseJavaModule implements Activi
 
             Intent intent = new Intent();
             intent.setClass(getCurrentActivity(), LivenessActivity.class);
-		    intent.putExtra(LivenessActivity.EXTRA_RESULT_PATH, EXTRA_RESULT_PATH);
+        intent.putExtra(LivenessActivity.EXTRA_RESULT_PATH, EXTRA_RESULT_PATH);
             intent.putExtra(LivenessActivity.SEQUENCE_JSON,
                     bundle.getString("sequence_json"));
             intent.putExtra(LivenessActivity.SOUND_NOTICE, bundle.getBoolean(LivenessActivity.SOUND_NOTICE));
@@ -157,5 +157,10 @@ public class LinkFaceModule extends ReactContextBaseJavaModule implements Activi
     @ReactMethod
     public void version(@Nullable final Promise promise) {
         promise.resolve("no version");
+    }
+
+    @Override
+    public boolean canOverrideExistingModule() {
+        return true;
     }
 }
